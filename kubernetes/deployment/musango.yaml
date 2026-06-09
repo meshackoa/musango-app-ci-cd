@@ -38,4 +38,4 @@ spec:
     - protocol: TCP
       port: 8082
       targetPort: 8082
-      nodePort: 30012
+      nodePort: 30022
