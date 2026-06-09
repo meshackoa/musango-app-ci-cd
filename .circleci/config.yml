@@ -35,6 +35,10 @@ jobs:
           command: |
             dockerize -wait tcp://localhost:27017 -timeout 30s
       - run:
+          name: Install Chrome for Puppeteer
+          command: |
+            npx puppeteer browsers install chrome
+      - run:
           name: Run Tests
           command: |
             export MONGO_URI="mongodb://localhost:27017/musango-express"
