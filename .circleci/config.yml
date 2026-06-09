@@ -204,6 +204,7 @@ workflows:
             - test
 
       - build_and_push:
+          context: development
           requires:
             - run_app
 
