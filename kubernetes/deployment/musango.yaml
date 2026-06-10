@@ -31,11 +31,10 @@ metadata:
   name: musango
   namespace: development
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: musango
   ports:
     - protocol: TCP
       port: 8082
       targetPort: 8082
-      nodePort: 30022
